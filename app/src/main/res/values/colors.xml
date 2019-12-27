@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--通知栏-->
+    <color name="colorPrimary">#33ccff</color>
+    <!--导航栏-->
+    <color name="colorPrimaryDark">#33ccff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="fontColor">#333333</color>
+    <color name="fontColor_2">#2B2B2B</color>
+    <color name="fontColor3">#333333</color>
+    <color name="backgroundColor">#cccccc</color>
+</resources>

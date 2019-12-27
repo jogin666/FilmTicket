@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:id="@+id/userInfoHeadImgLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <ImageView
+                android:id="@+id/userHeadImg"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:layout_gravity="center|right"
+                android:src="@mipmap/head_img"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="68dp"
+                android:layout_weight="8"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:text="yours"
+                    android:id="@+id/usename"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="30dp"
+                    android:textColor="@color/fontColor_2"
+                    android:textSize="25sp"/>
+                <TextView
+                    android:text="yours"
+                    android:id="@+id/useraccount"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="30dp"
+                    android:textColor="@color/fontColor_2"
+                    android:textSize="25sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_gravity="center|bottom"
+                android:src="@mipmap/forward2"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#CFCFCF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:id="@+id/myFilms"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/film"
+                    android:layout_gravity="center"
+                    android:contentDescription=""/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|bottom"
+                    android:text="@string/filmTicket"
+                    android:textSize="16sp"
+                    android:textColor="@color/fontColor_2"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Coupon"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/juan"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|bottom"
+                    android:text="@string/youhuijuan"
+                    android:textSize="16sp"
+                    android:textColor="@color/fontColor_2"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myFilmCard"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/card"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|bottom"
+                    android:text="@string/qunayicard"
+                    android:textSize="16sp"
+                    android:textColor="@color/fontColor_2"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#cccccc"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/wantSeeFilm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/seeFilm"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/fontColor_2"
+                android:layout_centerVertical="true"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/seeFilmImg"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/forward2"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription=""/>
+        </RelativeLayout>
+
+        <include layout="@layout/level"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/sawFilm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:text="@string/films"
+                android:textSize="16sp"
+                android:textColor="@color/fontColor_2"/>
+            <ImageView
+                android:id="@+id/sawFilmImg"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/forward2"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription=""/>
+        </RelativeLayout>
+
+        <include layout="@layout/level"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/filmCard"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/filmcard"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/fontColor_2"/>
+
+            <ImageView
+                android:id="@+id/filmImg"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/forward2"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription=""/>
+        </RelativeLayout>
+
+        <include layout="@layout/level"/>
+
+        <RelativeLayout
+            android:id="@+id/helpAndFeedBack"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_help"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/help"
+                android:layout_centerVertical="true"
+                android:textColor="@color/fontColor_2"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/helpForward"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/forward2"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription=""/>
+        </RelativeLayout>
+
+        <include layout="@layout/level"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF">
+            <TextView
+                android:id="@+id/aboutProduction"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/aboutProduction"
+                android:layout_centerVertical="true"
+                android:textColor="@color/fontColor_2"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/aboutProductionImg"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/forward2"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription=""/>
+        </RelativeLayout>
+
+        <include layout="@layout/level"/>
+
+        <RelativeLayout
+            android:id="@+id/changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/changePass"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/fontColor_2"/>
+
+            <ImageView
+                android:id="@+id/passwordImg"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/forward2"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription=""/>
+        </RelativeLayout>
+        <include layout="@layout/level"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/operationBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/textFontSize_18"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="eight_of_weight">8</integer>
+    <integer name="two_of_weight">2</integer>
+    <integer name="one_of_weight">1</integer>
+    <integer name="nine_of_weight">9</integer>
+    <integer name="six_of_weight">6</integer>
+</resources>

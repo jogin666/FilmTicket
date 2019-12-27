@@ -1,0 +1,64 @@
+<resources>
+    <string name="title_activity_change_user_password">ChangeUserPassword</string>
+    <string name="app_name">FilmTicket</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">首页</string>
+    <string name="title_film">电影</string>
+    <string name="title_mine">我的</string>
+    <string name="login">登 录</string>
+
+    <string name="verification">短信验证码登录</string>
+    <string name="regAnPass">账号密码登录</string>
+    <string name="ver_password">验 证 码</string>
+    <string name="verifyPass">验证码</string>
+    <string name="password">密 码</string>
+    <string name="account">账 号</string>
+    <string name="login_reg">注 册</string>
+    <string name="fogetPass">忘记密码</string>
+    <string name="changePass">修改密码</string>
+
+    <string name="otherway">第三方登录</string>
+    <string name="agree">同意并登录</string>
+    <string name="mobile">手机号码</string>
+    <string name="verify_mobile">验证码</string>
+    <string name="stament">已阅读并同意以下协议获取《手机信息协议》、《隐私政策协议》、《法律声明》</string>
+    <string name="seeFilm">想看的电影</string>
+    <string name="films">看过的电影</string>
+    <string name="cancelBtn">退出登录</string>
+    <string name="filmcard">电影院院卡</string>
+    <string name="help">帮助与反馈</string>
+    <string name="aboutProduction">关于产品</string>
+
+    <string name="description_back">回退</string>
+    <string name="description_front">前进</string>
+    <string name="qq">第三方QQ登录</string>
+    <string name="weChat">第三方微信登录</string>
+
+
+    <string name="filmTicket">电影票</string>
+    <string name="youhuijuan">优惠券</string>
+    <string name="qunayicard">权益卡</string>
+
+    <string name="userInfo">个人信息</string>
+
+    <string name="userHeadImg">头 像：</string>
+    <string name="userName">昵 称：</string>
+    <string name="userGender">性 别：</string>
+    <string name="userBrithday">生 日：</string>
+    <string name="userIntroduction">一句话介绍：</string>
+    <string name="userIntroductionSize">最多一百字</string>
+    <string name="userInfoEdit">编辑</string>
+    <string name="userInfoSave">保存</string>
+    <string name="userInfo_Man">男</string>
+    <string name="userInfo_Women">女</string>
+    <string name="getVerfication">获取验证码</string>
+
+
+    <!--错误提示-->
+    <string name="errorTitle">错误提示</string>
+    <string name="accountIsNotExit">账户不存在</string>
+    <string name="accoutIsEmpty">账户不能为空</string>
+    <string name="accoutIsNotMobile">手机号码错误</string>
+    <string name="passwordIsEmpty">密码不能为空</string>
+    <string name="passwordIsError">密码错误</string>
+</resources>

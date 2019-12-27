@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/titleBar"
+        layout="@layout/title"/>
+
+    <HorizontalScrollView
+        android:id="@+id/fimeDate"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="电影院"
+        android:textColor="@color/fontColor"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:textSize="@dimen/textFontSize_18"
+        android:gravity="center|left"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

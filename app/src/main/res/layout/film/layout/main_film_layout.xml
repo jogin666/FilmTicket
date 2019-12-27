@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:focusable="false"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/main_show_film"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/head_img"/>
+
+        <TextView
+            android:focusable="false"
+            android:id="@+id/main_film_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/main_show_film"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:paddingTop="10dp"
+            android:text="电影名" />
+
+        <TextView
+            android:id="@+id/filmType"
+            android:layout_below="@+id/main_film_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/main_show_film"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center|left"
+            android:paddingTop="10dp"
+            android:text="荧屏类型" />
+
+        <TextView
+            android:id="@+id/filmRating"
+            android:layout_below="@+id/filmType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/main_show_film"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center|left"
+            android:paddingTop="10dp"
+            android:text="评分" />
+
+
+        <TextView
+            android:id="@+id/buyFilmTicket"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/filmType"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="购票" />
+
+
+    </RelativeLayout>
+</LinearLayout>

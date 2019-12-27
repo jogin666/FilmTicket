@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoActivity"
+    android:orientation="vertical">
+
+    <include android:id="@+id/titleBar"
+        layout="@layout/title"/>
+
+    <RelativeLayout
+        android:id="@+id/headImgLayout"
+        android:enabled="false"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/userHeadImg"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:textColor="@color/fontColor_2"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textFontSize_18" />
+        <ImageView
+            android:id="@+id/userHeadUrl"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/head_img"/>
+    </RelativeLayout>
+
+    <include layout="@layout/level"/>
+
+    <LinearLayout
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:textColor="@color/fontColor_2"
+            android:layout_weight="@integer/two_of_weight"
+            android:text="@string/userName"
+            android:layout_gravity="center"
+            android:textSize="18sp" />
+        <EditText
+            android:enabled="false"
+            android:id="@+id/tv_username"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="9"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+    <include layout="@layout/level"/>
+
+    <LinearLayout
+        android:id="@+id/userGender"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:textColor="@color/fontColor_2"
+            android:text="@string/userGender"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_gravity="center"
+            android:textSize="18sp" />
+       <RadioGroup
+           android:id="@+id/genderGroup"
+           android:background="@null"
+           android:layout_gravity="center"
+           android:layout_weight="5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:enabled="false"
+           android:orientation="horizontal">
+           <RadioButton
+               android:id="@+id/man"
+               android:layout_marginLeft="15dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/userInfo_Man"/>
+           <RadioButton
+               android:id="@+id/women"
+               android:layout_marginLeft="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/userInfo_Women"/>
+       </RadioGroup>
+    </LinearLayout>
+
+    <include layout="@layout/level"/>
+
+    <LinearLayout
+        android:id="@+id/userBrithday"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/brithday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:text="@string/userBrithday"
+            android:textColor="@color/fontColor_2"
+            android:layout_gravity="center"
+            android:textSize="18sp" />
+        <EditText
+            android:enabled="false"
+            android:id="@+id/tv_brithday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="9"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <include layout="@layout/level"/>
+
+    <TextView
+        android:id="@+id/introduct"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/fontColor_2"
+        android:text="@string/userIntroduction"
+        android:layout_gravity="center"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:gravity="top"
+        android:hint="@string/userIntroductionSize"
+        android:background="#FFFFFF"
+        android:id="@+id/et_introduction"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:lines="8"/>
+
+</LinearLayout>

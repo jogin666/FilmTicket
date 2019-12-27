@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tipTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="更改头像"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/fontColor_2"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/level0"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tipTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"/>
+
+    <ImageView
+        android:id="@+id/img_img"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/level0"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/image"/>
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/img_camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:layout_below="@+id/level0"
+        android:src="@mipmap/camera"/>
+
+    <View
+        android:id="@+id/level"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/img_img"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/tipFootView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/level"
+        android:layout_centerHorizontal="true"
+        android:text="我知道了"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

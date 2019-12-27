@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilmInfoActivity">
+
+    <include layout="@layout/title"/>
+
+    <RelativeLayout
+        android:id="@+id/filmInfo"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:id="@id/filmImg"
+            android:layout_marginLeft="20dp"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:focusable="false"
+            android:src="@mipmap/head_img"/>
+        <RelativeLayout
+            android:focusable="false"
+            android:layout_toRightOf="@+id/filmImg"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/filmName"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/fontColor_2"
+                android:text="电影名"/>
+            <TextView
+                android:id="@+id/filmType"
+                android:layout_below="@id/filmName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:textSize="14sp"
+                android:textColor="@color/fontColor_2"
+                android:text="类型/时长/影评类型"/>
+            <TextView
+                android:id="@+id/filmTime"
+                android:layout_below="@id/filmType"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/fontColor_2"
+                android:text="上映时间"/>
+            <TextView
+                android:id="@+id/adviseText"
+                android:layout_below="@id/filmTime"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/fontColor_2"
+                android:text="推荐度"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/filnIntro"
+        android:layout_below="@+id/filmInfo"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/shoumming"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="简介"
+            android:textColor="@color/fontColor_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/introduction"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:text="电影简介"
+            android:textColor="@color/fontColor_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:layout_below="@+id/filnIntro"
+        android:id="@+id/buyTicket"
+        android:layout_marginTop="10dp"
+        android:text="立即购票"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
