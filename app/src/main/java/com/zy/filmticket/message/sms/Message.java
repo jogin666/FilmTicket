@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class Message 
 {
-	private final String id="jogin";
-	private final String key="d41d8cd98f00b204e980";
+	private final String id=""; // id_(jogin)_66
+	private final String key=""; //key_(d41d8cd98f00)_zy_(b204e980)
 	private String content=null; //消息的内容
 	private String phoneNum=null; //接受短信的手机号码
 
