@@ -28,8 +28,8 @@ public class SendSMS {
     //产品域名,开发者无需替换
     private static final String domain = "dysmsapi.aliyuncs.com";
     //秘钥
-    private static final String accessKeyId="LTAIFgUjsL0tTmoU";
-    private static final String accessKeySecret="sZBj5zx2CNSdLOoNSi49lPTrQa4cJZ";
+    private static final String accessKeyId=""; //AccessKeyID
+    private static final String accessKeySecret=""; //AccessKey sercet
     //签名
     private static final String signName="FilmTicket";
     //模板code
